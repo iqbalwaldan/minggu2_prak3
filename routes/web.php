@@ -26,3 +26,4 @@ Route::prefix('/sarana')->group(function () {
     Route::get('/kelas', [MyController::class, 'kelas']);
     Route::get('/lainnya', [MyController::class, 'lainnya']);
 });
+Route::get('/about-us', [MyController::class, 'about']);

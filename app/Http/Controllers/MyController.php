@@ -37,4 +37,8 @@ class MyController extends Controller
     public function lainnya(){
         return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Lainnya';
     }
+
+    public function about(){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman About Us';
+    }
 }
