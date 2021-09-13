@@ -27,3 +27,4 @@ Route::prefix('/sarana')->group(function () {
     Route::get('/lainnya', [MyController::class, 'lainnya']);
 });
 Route::get('/about-us', [MyController::class, 'about']);
+Route::get('/comment/{nama}/{pesan}', [MyController::class, 'comment']);

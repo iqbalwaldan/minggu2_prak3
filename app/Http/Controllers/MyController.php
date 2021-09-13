@@ -41,4 +41,8 @@ class MyController extends Controller
     public function about(){
         return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman About Us';
     }
+
+    public function comment($nama,$pesan){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Pesan, Nama = ' . $nama . ' dengan Pesan = ' . $pesan;
+    }
 }
