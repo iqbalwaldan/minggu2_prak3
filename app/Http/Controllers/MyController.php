@@ -21,4 +21,20 @@ class MyController extends Controller
     public function news($id){
         return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman News '. $id;
     }
+
+    public function perkantoran(){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Perkantoran';
+    }
+
+    public function laboratorium(){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Laboratorium';
+    }
+    
+    public function kelas(){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Kelas';
+    }
+
+    public function lainnya(){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Lainnya';
+    }
 }
