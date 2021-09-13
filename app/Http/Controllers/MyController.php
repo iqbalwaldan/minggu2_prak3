@@ -11,10 +11,14 @@ class MyController extends Controller
     }
 
     public function mi(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang Prodi Manajemen Informatika';
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Prodi Manajemen Informatika';
     }
 
     public function ti(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang Prodi Teknik Informatika';
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Prodi Teknik Informatika';
+    }
+
+    public function news($id){
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman News '. $id;
     }
 }

@@ -19,3 +19,4 @@ Route::prefix('/prodi')->group(function () {
     Route::get('/manajemen-informatika', [MyController::class, 'mi']);
     Route::get('/teknik-informatika', [MyController::class, 'ti']);
 });
+Route::get('/news/{id}', [MyController::class, 'news']);
