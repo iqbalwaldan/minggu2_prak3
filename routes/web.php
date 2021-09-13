@@ -15,3 +15,7 @@ use App\Http\Controllers\MyController;
 */
 
 Route::get('/home', [MyController::class, 'index']);
+Route::prefix('/prodi')->group(function () {
+    Route::get('/manajemen-informatika', [MyController::class, 'mi']);
+    Route::get('/teknik-informatika', [MyController::class, 'ti']);
+});
