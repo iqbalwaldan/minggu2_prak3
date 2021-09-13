@@ -19,7 +19,7 @@ class MyController extends Controller
     }
 
     public function news($id){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman News '. $id;
+        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman NEWS '. $id;
     }
 
     public function perkantoran(){
