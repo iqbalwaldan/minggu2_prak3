@@ -7,42 +7,42 @@ use Illuminate\Http\Request;
 class MyController extends Controller
 {
     public function index(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang';
+        return view('home');
     }
 
     public function mi(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Prodi Manajemen Informatika';
+        return view('mi');
     }
 
     public function ti(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Prodi Teknik Informatika';
+        return view('ti');
     }
 
     public function news($id){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman NEWS '. $id;
+        return view('news',['id' => $id]);
     }
 
     public function perkantoran(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Perkantoran';
+        return view('perkantoran');
     }
 
     public function laboratorium(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Laboratorium';
+        return view('laboratorium');
     }
     
     public function kelas(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Kelas';
+        return view('kelas');
     }
 
     public function lainnya(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Saranan Lainnya';
+        return view('lainnya');
     }
 
     public function about(){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman About Us';
+        return view('about-us');
     }
 
     public function comment($nama,$pesan){
-        return 'Selamat Datang Di Webside Jurusan Teknologi Informasi Politeknik Negeri Malang, Halaman Pesan, Nama = ' . $nama . ' dengan Pesan = ' . $pesan;
+        return view('comment',['nama' => $nama],['pesan' => $pesan]);
     }
 }
